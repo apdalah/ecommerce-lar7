@@ -12,10 +12,20 @@ use Illuminate\Support\Facades\Route;
 | contains the "dashboard" middleware group. Now create something great!
 |
 */
-
+define('PAGINATION_COUNT', 10);
 Route::group(['middleware' => 'auth:dashboard'], function() {
 
 	Route::get('/', 'HomeController@show')->name('admin.index');
+
+	############################ Languages Routes #############
+	Route::name('admin.')->group(function(){
+		Route::resource('languages', 'LanguagesController')->except('show');
+	});
+
+	############################ Main Categories Routes #############
+	Route::name('admin.')->group(function(){
+		Route::resource('main-categories', 'MainCategoriesController')->except('show');
+	});
 
 });
 

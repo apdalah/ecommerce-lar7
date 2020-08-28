@@ -146,6 +146,10 @@ return [
     |
     */
 
-    'attributes' => [],
+    'attributes' => [
+        'name.*'                => 'name',
+        'translation_lang.*'      => 'language',
+        'tags.*'                  => 'tags',
+    ],
 
 ];

@@ -16,12 +16,10 @@ class CreateLanguagesTable extends Migration
         Schema::create('languages', function (Blueprint $table) {
             $table->id();
             $table->string('abbr');
-            $table->string('locale');
             $table->string('name');
-            $table->string('native');
             $table->string('flag')->nullable();
             $table->enum('direction', ['rtl', 'ltr'])->default('rtl');
-            $table->tinyInteger('active')->default(1);
+            $table->tinyInteger('status')->default(1);
             $table->timestamps();
         });
     }
