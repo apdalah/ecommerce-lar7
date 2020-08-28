@@ -7,7 +7,7 @@
                 </li>
                 <li class="nav-item">
                     <a class="navbar-brand" href="index.html">
-                        <img class="brand-logo" alt="modern admin logo" src="{{ asset('public/Dashboard/images/logo/logo.png') }}" />
+                        <img class="brand-logo" alt="modern admin logo" src="{{ asset('assets/Dashboard/images/logo/logo.png') }}" />
                         <h3 class="brand-text">لوحة التحكم</h3>
                     </a>
                 </li>
@@ -134,7 +134,7 @@
                                 <a href="javascript:void(0)">
                                     <div class="media">
                                         <div class="media-left">
-                                            <span class="avatar avatar-sm avatar-online rounded-circle"> <img src="{{ asset('public/Dashboard/images/portrait/small/avatar-s-19.png') }}" alt="avatar" /><i></i></span>
+                                            <span class="avatar avatar-sm avatar-online rounded-circle"> <img src="{{ asset('assets/Dashboard/images/portrait/small/avatar-s-19.png') }}" alt="avatar" /><i></i></span>
                                         </div>
                                         <div class="media-body">
                                             <h6 class="media-heading">Margaret Govan</h6>
@@ -148,7 +148,7 @@
                                 <a href="javascript:void(0)">
                                     <div class="media">
                                         <div class="media-left">
-                                            <span class="avatar avatar-sm avatar-busy rounded-circle"> <img src="{{ asset('public/Dashboard/images/portrait/small/avatar-s-2.png') }}" alt="avatar" /><i></i></span>
+                                            <span class="avatar avatar-sm avatar-busy rounded-circle"> <img src="{{ asset('assets/Dashboard/images/portrait/small/avatar-s-2.png') }}" alt="avatar" /><i></i></span>
                                         </div>
                                         <div class="media-body">
                                             <h6 class="media-heading">Bret Lezama</h6>
@@ -162,7 +162,7 @@
                                 <a href="javascript:void(0)">
                                     <div class="media">
                                         <div class="media-left">
-                                            <span class="avatar avatar-sm avatar-online rounded-circle"> <img src="{{ asset('public/Dashboard/images/portrait/small/avatar-s-3.png') }}" alt="avatar" /><i></i></span>
+                                            <span class="avatar avatar-sm avatar-online rounded-circle"> <img src="{{ asset('assets/Dashboard/images/portrait/small/avatar-s-3.png') }}" alt="avatar" /><i></i></span>
                                         </div>
                                         <div class="media-body">
                                             <h6 class="media-heading">Carie Berra</h6>
@@ -176,7 +176,7 @@
                                 <a href="javascript:void(0)">
                                     <div class="media">
                                         <div class="media-left">
-                                            <span class="avatar avatar-sm avatar-away rounded-circle"> <img src="{{ asset('public/Dashboard/images/portrait/small/avatar-s-6.png') }}" alt="avatar" /><i></i></span>
+                                            <span class="avatar avatar-sm avatar-away rounded-circle"> <img src="{{ asset('assets/Dashboard/images/portrait/small/avatar-s-6.png') }}" alt="avatar" /><i></i></span>
                                         </div>
                                         <div class="media-body">
                                             <h6 class="media-heading">Eric Alsobrook</h6>

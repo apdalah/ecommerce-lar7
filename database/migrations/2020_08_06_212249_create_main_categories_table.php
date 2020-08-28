@@ -17,10 +17,10 @@ class CreateMainCategoriesTable extends Migration
             $table->id();
             $table->string('translation_lang');
             $table->unsignedBigInteger('translation_of');
-            $table->string('string');
-            $table->string('slug');
+            $table->string('name');
+            $table->string('tags');
             $table->string('image')->nullable();
-            $table->tinyInteger('active')->default(1);
+            $table->tinyInteger('status')->default(1);
             $table->timestamps();
         });
     }

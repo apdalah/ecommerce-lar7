@@ -2,30 +2,30 @@
     <div class="main-menu-content">
         <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
             <li class="nav-item active">
-                <a href=""><i class="la la-mouse-pointer"></i><span class="menu-title" data-i18n="nav.add_on_drag_drop.main">الرئيسية </span></a>
+                <a href="{{ route('admin.index') }}"><i class="la la-mouse-pointer"></i><span class="menu-title" data-i18n="nav.add_on_drag_drop.main">الرئيسية </span></a>
             </li>
 
             <li class="nav-item">
                 <a href="">
                     <i class="la la-home"></i>
-                    <span class="menu-title" data-i18n="nav.dash.main">المتاجر </span>
-                    <span class="badge badge badge-info badge-pill float-right mr-2">5</span>
+                    <span class="menu-title" data-i18n="nav.dash.main">اللغات </span>
+                    <span class="badge badge badge-info badge-pill float-right mr-2">{{ App\Models\Language::count() }}</span>
                 </a>
                 <ul class="menu-content">
-                    <li class="active"><a class="menu-item" href="" data-i18n="nav.dash.ecommerce"> عرض الكل </a></li>
-                    <li><a class="menu-item" href="" data-i18n="nav.dash.crypto">أضافة متجر جديد </a></li>
+                    <li class="active"><a class="menu-item" href="{{ route('admin.languages.index') }}" data-i18n="nav.dash.ecommerce"> عرض الكل </a></li>
+                    <li><a class="menu-item" href="{{ route('admin.languages.create') }}" data-i18n="nav.dash.crypto"> اضافة لغه جديده </a></li>
                 </ul>
             </li>
 
             <li class="nav-item">
                 <a href="">
                     <i class="la la-group"></i>
-                    <span class="menu-title" data-i18n="nav.dash.main">الفرق </span>
-                    <span class="badge badge badge-danger badge-pill float-right mr-2"></span>
+                    <span class="menu-title" data-i18n="nav.dash.main">الآقسام الرئيسيه </span>
+                    <span class="badge badge badge-danger badge-pill float-right mr-2">{{ App\Models\MainCategory::count() }}</span>
                 </a>
                 <ul class="menu-content">
-                    <li class="active"><a class="menu-item" href="" data-i18n="nav.dash.ecommerce"> عرض الكل </a></li>
-                    <li><a class="menu-item" href="" data-i18n="nav.dash.crypto">أضافة فريق </a></li>
+                    <li class="active"><a class="menu-item" href="{{ route('admin.main-categories.index') }}" data-i18n="nav.dash.ecommerce"> عرض الكل </a></li>
+                    <li><a class="menu-item" href="{{ route('admin.main-categories.create') }}" data-i18n="nav.dash.crypto">اضافة قسم جديد</a></li>
                 </ul>
             </li>
 
